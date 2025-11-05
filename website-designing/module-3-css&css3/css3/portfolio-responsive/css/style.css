@@ -20,7 +20,7 @@ color: var(--text-white);
 }
 #main 
 {
-width: 96%;
+width: 98%;
 height: auto;
 margin: auto;
 padding: 10px 10px;
@@ -35,6 +35,8 @@ border: solid 1px white;
 border-radius: 15px;
 position: fixed;
 padding: 15px;
+background-color: var(--bg-darkgray);
+z-index: 5;
 }
 .navbar-link li 
 {
@@ -60,9 +62,9 @@ margin-left: 30%;
 {
  width: 100%;
  height: auto;
+ margin-bottom: 10% !important;
  padding: 25px;
- border: solid 1px transparent;
- margin-top: 2%;  
+ border: solid 1px transparent;  
  display: flex;
 }
 .banners-txt
@@ -99,16 +101,18 @@ line-height: 1;
 width: 180px;
 height: auto;
 font-size: 20px;
+margin-top: 10% !important;
 padding: 15px 0px;
 border: none;
 border-radius: 20px;
-background-color: var(--bg-white);    
+background-color: var(--bg-white);  
+  
 }
-
 .banners-txt #btn2
 {
 width: 180px;
 height: auto;
+margin-top: 10% !important;
 font-size: 20px;
 padding: 15px 0px;
 border: solid 1px white;
@@ -135,16 +139,109 @@ box-shadow: 15px 10px gray;
 {
  width: 100%;
  height: auto;
- padding: 25px;
- border: solid 1px white;
- margin-top: 5%;     
+ padding: 15px;
+ margin-top: 5%;
+ display: grid; 
+ grid-template-columns: auto auto;    
+}
+.get-to-know-me-photo
+{
+width: 90%;
+height: 90vh;
+padding: 10px;
+border-radius: 15px;
+background-color: var(--bg-lightgray);
+border-top: solid 2px white;
+}
+.get-to-know-me-photo img 
+{
+ width: 125px;
+ height: 125px;
+ border-radius: 50%;
+ border: solid 3px white;   
+}
+.input-area 
+{
+height: auto;
+margin: auto;
+margin-top: 2% !important;
+padding: 15px;
+background-color: var(--bg-lightgray1);    
+border:  solid 1px gray;
+border-radius: 10px;
+transition: 0.5s ease all;
+}
+.input-area:hover 
+{
+height: auto;
+margin: auto;
+padding: 15px;
+background-color: var(--bg-white);    
+border:  none;
+color: black;
+border-radius: 10px;
+}
+.get-to-know-me-txt
+{
+width: 90%;
+height: auto;
+margin: 0px;
+padding: 0px;
+margin-left: 2%;
+}
+.get-to-know-me-txt #btn1
+{
+width: auto;
+height: auto;
+padding: 10px;
+font-size: 18px;
+border: 0;
+border-radius: 20px;
+background-color: white;
+color: black;    
+}
+#client-details
+{
+width: 100%;
+height: auto;
+border-radius: 15px;
+background-color: #343434 !important;    
+}
+#btn2
+{
+width: auto;
+height: auto;
+padding: 12px;
+font-size: 18px;
+border: 0;
+border-radius: 20px;
+background-color: white;
+color: black;     
+}
+#btn3 
+{
+ width: auto;
+height: auto;
+padding: 12px;
+font-size: 18px;
+border: 0;
+border-radius: 20px;
+background-color: var(--bg-lightgray1);
+color: white;   
+}
+#project-details
+{
+width: 100%;
+height: auto;
+padding: 15px;
+border-radius: 15px;
+background-color: #343434 !important;    
 }
 .skills
 {
  width: 100%;
  height: auto;
  padding: 25px;
- border: solid 1px white;
  margin-top: 5%;     
 }
 .resume
@@ -152,7 +249,6 @@ box-shadow: 15px 10px gray;
  width: 100%;
  height: auto;
  padding: 25px;
- border: solid 1px white;
  margin-top: 5%;     
 }
 .portfolio
@@ -160,7 +256,6 @@ box-shadow: 15px 10px gray;
  width: 100%;
  height: auto;
  padding: 25px;
- border: solid 1px white;
  margin-top: 5%;     
 }
 .contact-us
@@ -168,6 +263,5 @@ box-shadow: 15px 10px gray;
  width: 100%;
  height: auto;
  padding: 25px;
- border: solid 1px white;
  margin-top: 5%;     
 }
