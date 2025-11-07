@@ -31,6 +31,24 @@
         <li><a href="#">📞 Contact</a></li>
     </ul>
 </div> 
+<!-- for mobiles -->
+<div class="leftsidebar-mobile">
+  <!-- menu toggle button -->
+  <button id="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- mobile navbar -->
+  <div class="navbar-link" id="mobile-menu">
+    <ul>
+      <li><a href="#">🏠 Home</a></li>
+      <li><a href="#">👤 About</a></li>
+      <li><a href="#">📁 Resume</a></li>
+      <li><a href="#">📃 Portfolio</a></li>
+      <li><a href="#">🔧 Services</a></li>
+      <li><a href="#">📃 Dropdown</a></li>
+      <li><a href="#">📞 Contact</a></li>
+    </ul>
+  </div>
+</div>
 <div class="rightsidebar">
 <!-- banners -->
 <div class="banners">
@@ -151,6 +169,12 @@
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
   AOS.init();
+</script>
+<script>
+function toggleMenu() {
+  document.getElementById("mobile-menu").classList.toggle("active");
+  
+}
 </script>
 </body>
 </html>
